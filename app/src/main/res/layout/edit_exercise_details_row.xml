@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/box"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <ImageButton
+        android:id="@+id/decrementButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:src="@mipmap/ic_remove_black_24dp"/>
+
+    <ImageButton
+        android:id="@+id/incrementButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:src="@mipmap/ic_add_black_24dp"/>
+
+    <TextView
+        android:id="@+id/editExerciseValue"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/decrementButton"
+        android:layout_alignTop="@id/decrementButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/editExerciseText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/editExerciseValue"
+        android:layout_alignTop="@id/editExerciseValue"
+        android:layout_toLeftOf="@id/editExerciseValue"
+        android:layout_toRightOf="@id/decrementButton"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/editExerciseText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/editExerciseValue"
+        android:layout_alignTop="@id/editExerciseValue"
+        android:layout_toLeftOf="@id/incrementButton"
+        android:layout_toRightOf="@id/editExerciseValue"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
